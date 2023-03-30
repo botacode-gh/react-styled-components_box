@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
-export default function BoxWithStyledComponents({ isBlack }) {
-  return <StyledBox isBlack={isBlack} />;
-}
-
-const StyledBox = styled.div`
+// why don't these work?
+// export default BoxWithStyledComponents = styled.div`
+// export default const BoxWithStyledComponents = styled.div`
+const BoxWithStyledComponents = styled.div`
   width: 100px;
   height: 100px;
   margin: 2rem;
@@ -15,3 +14,6 @@ const StyledBox = styled.div`
     background-color: red;
   }
 `;
+
+// but this does?
+export default BoxWithStyledComponents;
